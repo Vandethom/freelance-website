@@ -10,7 +10,7 @@
         <li><a href="/#services">Services</a></li>
         <li><a href="/#why-freelance">Plus</a></li>
         <li class="list-button"><a href="/devis">Devis</a></li>
-        <li class="list-button button-blue"><a href="/contact">Contact</a></li>
+        <li class="list-button button-blue"><a href="/#contact">Contact</a></li>
       </ul>
     </nav>
   </header>

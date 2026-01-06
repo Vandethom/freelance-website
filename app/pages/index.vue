@@ -4,5 +4,6 @@
     <SectionsHero />
     <SectionsWhatIBuild />
     <SectionsWhyFreelance />
+    <SectionsContact />
   </div>
 </template>
