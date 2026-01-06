@@ -5,10 +5,10 @@
         <h1>Logo</h1>
       </div>
       <ul class="menu">
-        <li><a href="/">Accueil</a></li>
+        <li><a href="/#hero">Accueil</a></li>
         <li><a href="/about">Projets</a></li>
-        <li><a href="/services">Services</a></li>
-        <li><a href="/plus">Plus</a></li>
+        <li><a href="/#services">Services</a></li>
+        <li><a href="/#why-freelance">Plus</a></li>
         <li class="list-button"><a href="/devis">Devis</a></li>
         <li class="list-button button-blue"><a href="/contact">Contact</a></li>
       </ul>
@@ -22,10 +22,16 @@
 
 <style scoped lang="scss">
 .header {
-  margin: 8px 0 8px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 20px;
+  height: 72px;
   font-family: 'Roboto', sans-serif;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
 
   ul {
     li {
@@ -35,6 +41,10 @@
     .list-button {
       border: 1px solid #666;
       border-radius: 5px;
+
+      a {
+        font-weight: bold;
+      }
     }
 
     .button-blue {

@@ -9,8 +9,8 @@
         Je construis des sites webs et applications modernes qui donnent du poids à votre entreprise. Chaque projet reçoit l'attention qu'il mérite, du concept à la mise en production.
       </p>
       <div class="hero-buttons">
-        <a href="#contact" class="btn btn-primary">Nous contacter</a>
-        <a href="#services" class="btn btn-secondary">Découvrir nos services</a>
+        <a href="#contact" class="btn btn-primary">Me contacter</a>
+        <a href="#services" class="btn btn-secondary">Découvrir mes services</a>
       </div>
     </div>
     <div class="hero-images">
@@ -31,8 +31,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #1e90ff;
-  color: white;
+  background-color: #d5e8ff;
   padding: 2rem;
   position: relative;
   overflow: hidden;
@@ -45,7 +44,8 @@
 
 .hero-content {
   flex: 0 0 60%;
-  max-width: 50%;
+  margin-left: 80px;
+  max-width: 45%;
   text-align: left;
   padding-right: 4rem;
   z-index: 10;
@@ -82,8 +82,9 @@
 
 .hero-buttons {
   display: flex;
-  gap: 1.5rem;
   flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 12px;;
 
   @media (max-width: 968px) {
     justify-content: center;
@@ -93,10 +94,14 @@
 .hero-images {
   flex: 0 0 40%;
   position: relative;
-  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  align-self: stretch;
+  background-color: #cadcf2;
+  padding: 2rem;
+  border-radius: 12px;
+  margin: -2rem -2rem -2rem 0;
 
   @media (max-width: 968px) {
     flex: 0 0 50vh;
@@ -152,7 +157,6 @@
 
   &-secondary {
     background-color: transparent;
-    color: white;
     border: 2px solid white;
 
     &:hover {
