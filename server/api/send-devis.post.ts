@@ -38,6 +38,11 @@ export default defineEventHandler(async (event) => {
   const emailUser = process.env.EMAIL_USER
   const emailPassword = process.env.EMAIL_PASSWORD
 
+  console.log('=== DEBUG EMAIL CONFIG ===')
+  console.log('EMAIL_USER:', emailUser ? `${emailUser.substring(0, 3)}***` : 'NON DÉFINI')
+  console.log('EMAIL_PASSWORD:', emailPassword ? `${emailPassword.substring(0, 4)}*** (${emailPassword.length} chars)` : 'NON DÉFINI')
+  console.log('==========================')
+
   if (!emailUser || !emailPassword || emailPassword === 'votre_mot_de_passe_ici') {
     // Mode développement : afficher dans la console
     console.log('\n=== DEMANDE DE DEVIS ===')
@@ -56,7 +61,7 @@ export default defineEventHandler(async (event) => {
   try {
     // Configuration du transporteur email
     const transporter = nodemailer.createTransport({
-      host: 'smtp-mail.outlook.com',
+      host: 'smtp.gmail.com',
       port: 587,
       secure: false,
       auth: {
