@@ -6,7 +6,7 @@
       </div>
       <ul class="menu">
         <li><a href="/#hero">Accueil</a></li>
-        <li><a href="/about">Projets</a></li>
+        <li><a href="/#projets">Projets</a></li>
         <li><a href="/#services">Services</a></li>
         <li><a href="/#why-freelance">Plus</a></li>
         <li class="list-button"><a href="/devis">Devis</a></li>

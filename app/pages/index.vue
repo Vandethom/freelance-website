@@ -3,6 +3,7 @@
     <Header />
     <SectionsHero />
     <SectionsWhatIBuild />
+    <SectionsProjects />
     <SectionsWhyFreelance />
     <SectionsContact />
   </div>
