@@ -57,6 +57,14 @@
   font-family: 'Roboto', sans-serif;
   padding: 5rem 2rem;
   background-color: #d5e8ff;
+
+  @media (max-width: 768px) {
+    padding: 4rem 1.5rem;
+  }
+
+  @media (max-width: 480px) {
+    padding: 3rem 1rem;
+  }
 }
 
 .container {
@@ -95,9 +103,13 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 
-  @media (max-width: 968px) {
+  @media (max-width: 1100px) {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+
+  @media (max-width: 480px) {
+    gap: 1.5rem;
   }
 }
 

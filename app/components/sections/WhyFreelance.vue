@@ -45,9 +45,18 @@
   font-family: 'Roboto', sans-serif;
   padding: 5rem 2rem;
   background-color: #d5e8ff;
-  max-height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
+
+  @media (max-width: 968px) {
+    min-height: auto;
+    padding: 4rem 1.5rem;
+  }
+
+  @media (max-width: 480px) {
+    padding: 3rem 1rem;
+  }
 }
 
 .container {
@@ -87,9 +96,13 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
 
-  @media (max-width: 968px) {
+  @media (max-width: 1100px) {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+
+  @media (max-width: 480px) {
+    gap: 1.5rem;
   }
 }
 

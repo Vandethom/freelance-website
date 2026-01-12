@@ -56,6 +56,11 @@
     padding-right: 0;
     text-align: center;
     margin-bottom: 2rem;
+    margin-left: 0;
+  }
+
+  @media (max-width: 480px) {
+    padding: 0 1rem;
   }
 }
 
@@ -68,6 +73,10 @@
   @media (max-width: 768px) {
     font-size: 2.5rem;
   }
+
+  @media (max-width: 480px) {
+    font-size: 2rem;
+  }
 }
 
 .hero-subtitle {
@@ -78,16 +87,30 @@
   @media (max-width: 768px) {
     font-size: 1.2rem;
   }
+
+  @media (max-width: 480px) {
+    font-size: 1rem;
+  }
 }
 
 .hero-buttons {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
-  margin-top: 12px;;
+  margin-top: 12px;
 
   @media (max-width: 968px) {
     justify-content: center;
+  }
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    gap: 1rem;
+    
+    .btn {
+      width: 100%;
+      text-align: center;
+    }
   }
 }
 

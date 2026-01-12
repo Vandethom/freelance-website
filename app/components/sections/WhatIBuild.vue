@@ -61,9 +61,17 @@
   font-family: 'Roboto', sans-serif;
   padding: 5rem 2rem;
   min-height: 100vh;
-  max-height: 100vh;
   display: flex;
   align-items: center;
+
+  @media (max-width: 968px) {
+    min-height: auto;
+    padding: 4rem 1.5rem;
+  }
+
+  @media (max-width: 480px) {
+    padding: 3rem 1rem;
+  }
 }
 
 .container {
@@ -76,6 +84,10 @@
   @media (max-width: 968px) {
     flex-direction: column;
     gap: 3rem;
+  }
+
+  @media (max-width: 480px) {
+    gap: 2rem;
   }
 }
 
@@ -153,10 +165,22 @@
     width: 1.5px;
     height: 4.5rem;
     background-color: #c5bbbb;
+
+    @media (max-width: 480px) {
+      display: none;
+    }
   }
 
   @media (max-width: 968px) {
     max-width: 400px;
+    padding: 2rem 0;
+  }
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding: 1.5rem 0;
   }
 }
 
